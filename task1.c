@@ -11,7 +11,7 @@ int main(int argc, char** argv){
         n = atoi(argv[1]);
         k = atoi(argv[2]);
 
-        if(!n||(!k && k!=0)) {
+        if((!n && n!=0)||(!k && k!=0)) {
             printf("Both n and k should be numbers\n");
             return -1;
         }
@@ -20,7 +20,7 @@ int main(int argc, char** argv){
             return -1;
         }
 
-        while (n>0) {
+        while (n>0) { //step calculation
             steps++;
             n-=1+k;
         }
