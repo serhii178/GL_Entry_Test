@@ -23,7 +23,7 @@ int main(int argc, char** argv){
 //Here we have arithmetic progression and need to find it's sum
 //a1=d, so S=d*n*(n+1)/2
 
-        cables_length=d*n*(n+1)/2;
+        cables_length=d*n*(n+1)>>1;  //bit shift == /2
 
         printf("%d\n",cables_length);
     }
